@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Structure | Indian Army Guide</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .rank-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .rank-card {
+            text-align: center;
+            padding: 30px;
+            transition: var(--transition);
+        }
+        .rank-card img {
+            width: 80px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+        }
+        .rank-category {
+            color: var(--secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .rank-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="subpage">
+
+    <header id="main-header" class="scrolled">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="History of Indian Army In English.html">History</a>
+            <a href="Images.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://static.theprint.in/wp-content/uploads/2022/01/P2022011500445-1.jpg');">
+        <div class="fade-up">
+            <h1>Rank Structure</h1>
+            <p>The hierarchy of leadership and discipline</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="section-title reveal">
+            <h2>Commissioned Officers</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="rank-grid">
+            <div class="glass rank-card reveal">
+                <span class="rank-category">Top Rank</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Field_marshal_india.png/120px-Field_marshal_india.png" alt="Field Marshal">
+                <div class="rank-name">Field Marshal</div>
+            </div>
+            <div class="glass rank-card reveal">
+                <span class="rank-category">General Officer</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Indian_Army_General_rank_insignia.png/120px-Indian_Army_General_rank_insignia.png" alt="General">
+                <div class="rank-name">General</div>
+            </div>
+            <div class="glass rank-card reveal">
+                <span class="rank-category">General Officer</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Indian_Army_Lieutenant_General_rank_insignia.png/120px-Indian_Army_Lieutenant_General_rank_insignia.png" alt="Lt. General">
+                <div class="rank-name">Lieutenant General</div>
+            </div>
+            <div class="glass rank-card reveal">
+                <span class="rank-category">Brigadier</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Indian_Army_Brigadier_rank_insignia.png/120px-Indian_Army_Brigadier_rank_insignia.png" alt="Brigadier">
+                <div class="rank-name">Brigadier</div>
+            </div>
+            <div class="glass rank-card reveal">
+                <span class="rank-category">Senior Officer</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Indian_Army_Colonel_rank_insignia.png/120px-Indian_Army_Colonel_rank_insignia.png" alt="Colonel">
+                <div class="rank-name">Colonel</div>
+            </div>
+            <div class="glass rank-card reveal">
+                <span class="rank-category">Junior Officer</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Indian_Army_Captain_rank_insignia.png/120px-Indian_Army_Captain_rank_insignia.png" alt="Captain">
+                <div class="rank-name">Captain</div>
+            </div>
+        </div>
+
+        <div class="section-title reveal" style="margin-top: 80px;">
+            <h2>Junior Commissioned Officers</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="rank-grid">
+            <div class="glass rank-card reveal">
+                <span class="rank-category">JCO</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Indian_Army_Subedar_Major_rank_insignia.png/120px-Indian_Army_Subedar_Major_rank_insignia.png" alt="Subedar Major">
+                <div class="rank-name">Subedar Major</div>
+            </div>
+            <div class="glass rank-card reveal">
+                <span class="rank-category">JCO</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Indian_Army_Subedar_rank_insignia.png/120px-Indian_Army_Subedar_rank_insignia.png" alt="Subedar">
+                <div class="rank-name">Subedar</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 80px;">
+            <a href="../Index Indian Army.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo footer-logo">🇮🇳 INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const revealTop = el.getBoundingClientRect().top;
+                const revealPoint = 100;
+                if (revealTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', reveal);
+        reveal();
+    </script>
+</body>
+</html>
