@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos | Indian Army Project</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="subpage">
+
+    <header id="main-header">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="Made By.html">About Me</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="section-title fade-up">
+            <h2>Shreyansh Gupta</h2>
+            <p>Project Collection</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="gallery fade-up">
+            <div class="glass card gallery-item">
+                <img src="../My Photos/WhatsApp Image 2022-02-20 at 1.22.07 PM.jpeg" alt="Shreyansh Photo 1">
+            </div>
+            <div class="glass card gallery-item">
+                <img src="../My Photos/WhatsApp Image 2022-02-20 at 1.22.31 PM.jpeg" alt="Shreyansh Photo 2">
+            </div>
+            <div class="glass card gallery-item">
+                <img src="../My Photos/WhatsApp Image 2022-02-20 at 1.22.54 PM.jpeg" alt="Shreyansh Photo 3">
+            </div>
+            <div class="glass card gallery-item">
+                <img src="../My Photos/WhatsApp Image 2022-02-20 at 1.24.11 PM.jpeg" alt="Shreyansh Photo 4">
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="Made By.html" class="btn btn-outline">Back to Profile</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flag-divider" style="height: 5px; width: 100%; margin-bottom: 20px;">
+            <div class="flag-saffron"></div>
+            <div class="flag-white"></div>
+            <div class="flag-green"></div>
+        </div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

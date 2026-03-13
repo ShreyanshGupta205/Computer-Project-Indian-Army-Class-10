@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military History Video | Indian Army</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="subpage">
+
+    <header id="main-header">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="History of Indian Army In English.html">History</a>
+            <a href="Images.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="height: 30vh; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://static.theprint.in/wp-content/uploads/2020/02/Indian-Army-4.jpg');">
+        <div class="fade-up">
+            <h1>Historical Chronicles</h1>
+            <p>Documentary and video records of our military legacy</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="glass card fade-up" style="max-width: 900px; margin: 0 auto; padding: 20px;">
+            <video width="100%" height="auto" controls style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                <source src="../Video/INDIAN MILITARY HISTORY.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div style="margin-top: 25px; text-align: center;">
+                <h2 style="color: var(--secondary);">The Evolution of Indian Military</h2>
+                <p style="color: var(--text-muted); margin-top: 10px;">A comprehensive visual journey through the decades of valor and transformation.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../Index Indian Army.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo footer-logo">INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

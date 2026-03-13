@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & About | Indian Army Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        .faq-item h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .faq-item h3::before {
+            content: '?';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            font-size: 1rem;
+        }
+        .faq-item p {
+            padding-left: 44px;
+            color: var(--text-muted);
+        }
+        .career-path {
+            background: rgba(19, 136, 8, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body class="subpage">
+
+    <header id="main-header">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="History of Indian Army In English.html">History</a>
+            <a href="Images.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://static.india.com/wp-content/uploads/2021/07/Indian-Army-Recruitment-2021-4.jpg');">
+        <div class="fade-up">
+            <h1>FAQ & Insights</h1>
+            <p>Everything you want to know about the Indian Armed Forces</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="grid">
+            <div class="glass card fade-up" style="grid-column: span 2;">
+                <div class="faq-item">
+                    <h3>Who is the No. 1 special force in India?</h3>
+                    <p><strong>MARCOS (Marine Commandos)</strong> is considered India's most lethal special force. Though they are trained to engage in battle on all terrains, MARCOS commandos are super-experts in maritime warfare.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How many types of Indian Army services are there?</h3>
+                    <p>The Indian Armed Forces consist of three professional uniformed services: the <strong>Indian Army</strong> (Land), <strong>Indian Navy</strong> (Sea), and <strong>Indian Air Force</strong> (Air).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Which states contribute the most to the Indian Army?</h3>
+                    <p>With over 1,67,557 soldiers, <strong>Uttar Pradesh</strong> tops the list of states contributing manpower to the Army, followed by states like Punjab, Haryana, and Rajasthan.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What makes the Indian Army one of the best?</h3>
+                    <p>Indian soldiers are considered among the best in the world for <strong>high-altitude warfare</strong>, jungle combat, and mountain operations. The Siachen conflict is a prime example of their unmatched capability in extreme conditions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Who is the highest decorated soldier in modern times?</h3>
+                    <p><strong>Captain Vikram Batra</strong> (Param Vir Chakra) is one of the most celebrated heroes, known for his bravery during the Kargil War of 1999.</p>
+                </div>
+            </div>
+
+            <div class="glass card fade-up" style="animation-delay: 0.2s;">
+                <img src="https://indianarmy.nic.in/writereaddata/images/career3.jpg" alt="Career" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+                <h2>Career in Army</h2>
+                <div class="career-path">
+                    <p>For a Permanent commission, you can join via the <strong>National Defence Academy (NDA)</strong> after class 12th or the <strong>Indian Military Academy (IMA)</strong> after graduation. Clear the UPSC exam and the SSB interview to begin your journey.</p>
+                </div>
+            </div>
+
+            <div class="glass card fade-up" style="animation-delay: 0.4s;">
+                <h2>Did You Know?</h2>
+                <div style="margin-top: 20px;">
+                    <p style="margin-bottom: 15px;">🎖️ The highest rank is <strong>Field Marshal</strong> (5-star).</p>
+                    <p style="margin-bottom: 15px;">📚 You can pursue higher studies while serving in the Army.</p>
+                    <p style="margin-bottom: 15px;">🇮🇳 The Indian Army is the largest volunteer army in the world.</p>
+                </div>
+                <a href="https://joinindianarmy.nic.in/" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 20px;">Explore Official Careers</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo footer-logo">INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

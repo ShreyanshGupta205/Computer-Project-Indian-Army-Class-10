@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Cinema | Indian Army Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 40px;
+        }
+        .movie-card {
+            padding: 20px;
+        }
+        .movie-card video {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            background: #000;
+        }
+        .movie-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .movie-info h3 {
+            color: var(--secondary);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body class="subpage">
+
+    <header id="main-header">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="Images.html">Gallery</a>
+            <a href="Made By.html">About Me</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://img.freepik.com/free-photo/composition-cinema-elements-red-background-with-copy-space_23-2148457845.jpg?size=626&ext=jpg');">
+        <div class="fade-up">
+            <h1>Military Cinema</h1>
+            <p>Epic movies celebrating the life and heroism of soldiers</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="movie-grid">
+            <div class="glass movie-card fade-up">
+                <video controls>
+                    <source src="../Movie/1.mp4">
+                </video>
+                <div class="movie-info">
+                    <h3>Epic Mission 01</h3>
+                    <p>Cine-visuals of strategic operations</p>
+                </div>
+            </div>
+
+            <div class="glass movie-card fade-up" style="animation-delay: 0.1s;">
+                <video controls>
+                    <source src="../Movie/2.mp4">
+                </video>
+                <div class="movie-info">
+                    <h3>Epic Mission 02</h3>
+                    <p>Highlights of battlefield courage</p>
+                </div>
+            </div>
+
+            <div class="glass movie-card fade-up" style="animation-delay: 0.2s;">
+                <video controls>
+                    <source src="../Movie/3.mp4">
+                </video>
+                <div class="movie-info">
+                    <h3>Epic Mission 03</h3>
+                    <p>Training and dedication of the forces</p>
+                </div>
+            </div>
+
+            <div class="glass movie-card fade-up" style="animation-delay: 0.3s;">
+                <video controls>
+                    <source src="../Movie/4.mp4">
+                </video>
+                <div class="movie-info">
+                    <h3>Epic Mission 04</h3>
+                    <p>The spirit of 'Nation First'</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="../Index Indian Army.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo footer-logo">INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

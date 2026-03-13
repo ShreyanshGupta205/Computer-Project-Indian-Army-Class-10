@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patriotic Melodies | Indian Army</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .player-card {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px;
+        }
+        .audio-controls {
+            margin-top: 30px;
+            width: 100%;
+        }
+        audio {
+            width: 100%;
+            height: 50px;
+            filter: invert(100%) hue-rotate(180deg) brightness(1.5);
+        }
+        .song-title {
+            color: var(--secondary);
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body class="subpage">
+
+    <header id="main-header" class="scrolled">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="History of Indian Army In English.html">History</a>
+            <a href="Images.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.indianexpress.com/2022/01/Indian-army.jpg');">
+        <div class="fade-up">
+            <h1>Songs of Freedom</h1>
+            <p>Melodies that inspire courage and patriotism</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="glass player-card fade-up">
+            <div style="font-size: 4rem; margin-bottom: 20px;">🎵</div>
+            <h2 class="song-title">Suno Gaur Se Duniya Walo</h2>
+            <p style="color: var(--text-muted); margin-bottom: 30px;">A timeless patriotic tribute</p>
+            
+            <div class="audio-controls">
+                <audio controls>
+                    <source src="../Add in project/adio/Suno Gaur Se Duniya Walo Buri Najar Na Hampe Dalo (Das)- [MyMp3Bhojpuri.In].mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../Index Indian Army.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo footer-logo">INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

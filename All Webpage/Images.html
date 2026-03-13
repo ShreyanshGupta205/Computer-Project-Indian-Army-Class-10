@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Indian Army Project</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .gallery-card:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .gallery-card:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay h4 {
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="subpage">
+
+    <header id="main-header">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="History of Indian Army In English.html">History</a>
+            <a href="Made By.html">About Me</a>
+        </nav>
+    </header>
+
+    <div class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://static.india.com/wp-content/uploads/2021/07/Indian-Army-Recruitment-2021-5.jpg');">
+        <div class="fade-up">
+            <h1>Gallery of Heroes</h1>
+            <p>Visual tributes to the protectors of the nation</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="section-title fade-up">
+            <h2>Images of Valour</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="gallery-grid fade-up">
+            <div class="gallery-card glass">
+                <img src="https://static.theprint.in/wp-content/uploads/2020/02/Indian-Army-4.jpg?compress=true&quality=80&w=376&dpr=2.6" alt="Indian Army 1">
+                <div class="gallery-overlay"><h4>Guardians of the Border</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://static.india.com/wp-content/uploads/2021/07/Indian-Army-Recruitment-2021-4.jpg" alt="Indian Army 2">
+                <div class="gallery-overlay"><h4>Dedication & Discipline</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/7/15/w1200X800/indian_army-PTI.jpg" alt="Indian Army 3">
+                <div class="gallery-overlay"><h4>Nation First</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-01/15/full/1642252088-5902.jpg" alt="Indian Army 4">
+                <div class="gallery-overlay"><h4>Prowess in Action</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://blog.ipleaders.in/wp-content/uploads/2020/09/shutterstock_1462454072-1.jpg" alt="Indian Army 5">
+                <div class="gallery-overlay"><h4>Silent Sentinels</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://images.indianexpress.com/2022/01/Indian-army.jpg" alt="Indian Army 6">
+                <div class="gallery-overlay"><h4>Unyielding Spirit</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://static.india.com/wp-content/uploads/2021/07/Indian-Army-Recruitment-2021-5.jpg" alt="Indian Army 7">
+                <div class="gallery-overlay"><h4>Elite Forces</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://english.cdn.zeenews.com/sites/default/files/2022/01/31/1010344-indian-army-recruitment-jobs.jpg" alt="Indian Army 8">
+                <div class="gallery-overlay"><h4>True Bravery</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://static-ai.asianetnews.com/images/01fnmtyrhg4dvhw2rnvr4zk0tf/sniper_710x400xt.jpg" alt="Indian Army 9">
+                <div class="gallery-overlay"><h4>Vigilance</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://www.businessinsider.in/thumb/msid-80270057,width-500,resizemode-4,imgsize=71647/The-Indian-Army-is-the-4th-largest-standing-Army-in-the-world-after-the-US-Russia-and-China-with-3-million-military-personnel-.jpg" alt="Indian Army 10">
+                <div class="gallery-overlay"><h4>Legacy of Strength</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://static.abplive.com/wp-content/uploads/2021/01/05005114/000_8XX4KW.jpg" alt="Indian Army 11">
+                <div class="gallery-overlay"><h4>Snow Warriors</h4></div>
+            </div>
+            <div class="gallery-card glass">
+                <img src="https://www.oneindia.com/img/2021/02/indian-army2-1612239720.jpg" alt="Indian Army 12">
+                <div class="gallery-overlay"><h4>Joint Operations</h4></div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../Index Indian Army.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo footer-logo">INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
