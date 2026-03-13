@@ -1,30 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>  Tour Of Duty In Army Video
-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Duty | Indian Army Video</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body bgcolor="lime">
-<marquee> <h1>    Tour Of Duty In Army Video   </h1>  </marquee>
+<body class="subpage">
 
+    <header id="main-header" class="scrolled">
+        <a href="../Index Indian Army.html" class="logo" style="text-decoration: none;">
+            <span style="color: var(--secondary)">🇮🇳</span>
+            INDIAN ARMY
+        </a>
+        <nav class="nav-links">
+            <a href="../Index Indian Army.html">Home</a>
+            <a href="History of Indian Army In English.html">History</a>
+            <a href="Images.html">Gallery</a>
+        </nav>
+    </header>
 
+    <div class="hero" style="height: 40vh; background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.indianexpress.com/2022/01/Indian-army.jpg');">
+        <div class="fade-up">
+            <h1>Tour Of Duty</h1>
+            <p>Understanding the concept and its impact on the nation's defense.</p>
+        </div>
+    </div>
 
-<br>
-<br>
-<h2><u> Tour Of Duty In Army Video :- <u></h2>
-<br>
-<br>
-<center>
+    <main class="container">
+        <div class="section-title fade-up">
+            <h2>Concept Explained</h2>
+            <div class="underline"></div>
+        </div>
 
+        <div class="glass card fade-up" style="padding: 0; overflow: hidden; max-width: 900px; margin: 0 auto;">
+            <video width="100%" controls style="display: block; aspect-ratio: 16/9; background: #000;">
+                <source src="../Video/Tour of Duty Concept Explained By khan sir  Tour Of Duty Effect on Other entries of Indian Army.mp4">
+                Your browser does not support the video element.
+            </video>
+            <div style="padding: 30px;">
+                <h4>Tour of Duty in Indian Army</h4>
+                <p style="color: var(--text-muted); margin-top: 10px;">A detailed explanation of the Tour of Duty concept, its objectives, and how it shapes the future of the Indian Armed Forces.</p>
+            </div>
+        </div>
 
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../Index Indian Army.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </main>
 
-<video width="800" height="600" controls>
-<source src="../Video/Tour of Duty Concept Explained By khan sir  Tour Of Duty Effect on Other entries of Indian Army.mp4">
+    <footer>
+        <div class="logo footer-logo">INDIAN ARMY</div>
+        <p class="copyright">&copy; 2026 Indian Army Fan Project. Saluting the Bravehearts.</p>
+    </footer>
 
-</video>
-
-</center>
-
-
-
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

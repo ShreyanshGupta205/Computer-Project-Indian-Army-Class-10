@@ -1,13 +1,17 @@
-﻿Video/Video.mp4
-Video/5.mp4
-Movie/2.mp4
-Movie/4.mp4
+﻿# Large Video Files (>100MB)
 Movie/1.mp4
+Movie/2.mp4
 Movie/3.mp4
+Movie/4.mp4
+Movie/5.mp4
+Video/Video.mp4
+Video/INDIAN ARMY NATION FIRST.mp4
+Video/INDIAN MILITARY HISTORY.mp4
 Movie/Shershaah*
-Movie/New video.mp4.~tmp
 *.mp4
 *.tmp
+
+# System and Tool Files
 .agent/
 .gemini/
 *.py
